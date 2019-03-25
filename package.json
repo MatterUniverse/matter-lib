@@ -1,0 +1,40 @@
+{
+  "name": "matter-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitcoinFiles/bitcoinfiles-sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BitcoinFiles/bitcoinfiles-sdk/issues"
+  },
+  "homepage": "https://github.com/BitcoinFiles/bitcoinfiles-sdk#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "base-58": "0.0.1",
+    "bitcoinfiles-sdk": "^1.2.2",
+    "bsv": "^0.24.8",
+    "datapay": "0.0.8",
+    "jsonschema": "^1.2.4",
+    "lodash": "^4.17.11",
+    "text-encoder": "0.0.4"
+  },
+  "files": [
+    "dist/*"
+  ]
+}

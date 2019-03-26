@@ -4,5 +4,6 @@ export interface FileData {
     encoding?: string;
     name?: string;
     title?: string;
+    postLinkId?: string;
     tags?: Array<string>;
 };

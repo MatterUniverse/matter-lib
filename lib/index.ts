@@ -65,5 +65,4 @@ export function getPost(txid: string, callback?: Function, options?: any): Promi
   const client = new Client(options);
   return client.getPost(txid, callback);
 }
-
-
+ 

@@ -1,14 +1,5 @@
-import * as datapay from 'datapay';
-import * as bsv from 'bsv';
 import * as bitcoinfiles from 'bitcoinfiles-sdk';
-import axios from 'axios';
 import { FileData } from './models/file-data.interface';
-declare var Buffer: any;
-import * as textEncoder from 'text-encoder';
-
-function buf2hex(buffer: any) {
-  return Array.prototype.map.call(new Uint8Array(buffer), x => ('00' + x.toString(16)).slice(-2)).join('')
-}
 
 function mapPrefix(): string {
     return '1PuQa7K62MiKCtssSLKy1kh56WWU7MtUR5';

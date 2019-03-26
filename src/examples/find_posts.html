@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Matter Post Test</title>
+    <title>Matter Find Posts</title>
 
     <base href="/" />
     <script src="/dist/bundle.js"></script>
@@ -15,17 +15,17 @@
     <script language="javascript">
         $(document).ready(async (e) => {
             var createRequest = {
-            file: {
-                title: 'Posted from matter-lib',
-                content: 'hello',
-                contentType: 'text/markdown',
-            },
-            pay: {
-                key: "5KLpZB2Sfn4S7QXh6rRynXrVZXXT8zTdQBaj7Ngs3ZHpip5zd8r"
-            },
-            identity: {
-                key: "5KLpZB2Sfn4S7QXh6rRynXrVZXXT8zTdQBaj7Ngs3ZHpip5zd8r"
-            }
+              file: {
+                  title: 'Posted from matter-lib',
+                  content: 'hello',
+                  contentType: 'text/markdown',
+              },
+              pay: {
+                  key: "5KLpZB2Sfn4S7QXh6rRynXrVZXXT8zTdQBaj7Ngs3ZHpip5zd8r"
+              },
+              identity: {
+                  key: "5KLpZB2Sfn4S7QXh6rRynXrVZXXT8zTdQBaj7Ngs3ZHpip5zd8r"
+              }
             }
             var matter = new Matter();
 

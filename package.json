@@ -1,6 +1,6 @@
 {
-  "name": "matter-sdk",
-  "version": "1.0.2",
+  "name": "matter-lib",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MatterUniverse/bitcoinfiles-sdk.git"
+    "url": "git+https://github.com/MatterUniverse/matter-lib.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MatterUniverse/matter-sdk/issues"
+    "url": "https://github.com/MatterUniverse/matter-lib/issues"
   },
-  "homepage": "https://github.com/BitcoinFiles/bitcoinfiles-sdk#readme",
+  "homepage": "https://github.com/MatterUniverse/matter-lib#readme",
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
@@ -50,11 +50,10 @@
     "typescript": "^3.3.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "ws": "^6.2.0"
+    "gulp-typescript": "^5.0.1"
   },
   "dependencies": {
-    "bitcoinfiles-sdk": "^1.2.2",
-    "gulp-typescript": "^5.0.1"
+    "bitcoinfiles-sdk": "^1.2.3"
   },
   "files": [
     "dist/*"

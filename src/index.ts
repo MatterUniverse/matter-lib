@@ -70,7 +70,9 @@ export default class Matter {
   options = undefined;
 
   constructor(options?: any) {
-    this.options = options;
+    if (options) {
+      this.options = options;
+    }
   }
 
   getPost(txid: string, callback?: Function): Promise<any> {

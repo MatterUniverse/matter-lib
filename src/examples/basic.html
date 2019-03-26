@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Matter Post Test</title>
+
+    <base href="/" />
+    <script src="/dist/bundle.js"></script>
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script language="javascript">
+        $(document).ready(async (e) => {
+            var createRequest = {
+            file: {
+                title: 'Posted from matter-lib',
+                content: 'hello',
+                contentType: 'text/markdown',
+            },
+            pay: {
+                key: "5KLpZB2Sfn4S7QXh6rRynXrVZXXT8zTdQBaj7Ngs3ZHpip5zd8r"
+            },
+            identity: {
+                key: "5KLpZB2Sfn4S7QXh6rRynXrVZXXT8zTdQBaj7Ngs3ZHpip5zd8r"
+            }
+            }
+            var matter = new Matter();
+
+            var result = await matter.getPost('txid');
+            console.log('result', result);
+        });
+    </script>
+  </head>
+  <body>
+    <div id="results"></div>
+  </body>
+</html>

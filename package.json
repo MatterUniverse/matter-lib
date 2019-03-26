@@ -20,9 +20,6 @@
   },
   "homepage": "https://github.com/BitcoinFiles/bitcoinfiles-sdk#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0",
-    "typescript": "^3.3.3",
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/plugin-transform-arrow-functions": "^7.0.0",
@@ -30,6 +27,7 @@
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
     "browserify-shim": "^3.8.14",
+    "chai": "^4.2.0",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
     "gulp-clean-css": "^3.10.0",
@@ -45,14 +43,17 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
+    "mocha": "^5.2.0",
     "streamqueue": "^1.1.2",
+    "tsify": "^4.0.1",
+    "typescript": "^3.3.3",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "ws": "^6.2.0"
   },
   "dependencies": {
     "bitcoinfiles-sdk": "^1.2.2",
-    "gulp-typescript": "^5.0.1",
-    "tsify": "^4.0.1"
+    "gulp-typescript": "^5.0.1"
   },
   "files": [
     "dist/*"

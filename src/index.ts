@@ -65,4 +65,19 @@ export function getPost(txid: string, callback?: Function, options?: any): Promi
   const client = new Client(options);
   return client.getPost(txid, callback);
 }
- 
+
+export default class Matter {
+  options = undefined;
+
+  constructor(options?: any) {
+    this.options = options;
+  }
+
+  getPost(txid: string, callback?: Function): Promise<any> {
+    return getPost(txid, callback, this.options);
+  }
+}
+
+if (window) {
+  window['Matter'] = Matter;
+}
